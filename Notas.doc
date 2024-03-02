@@ -1,0 +1,254 @@
+Que es HTML =Hypertext markup language
+no es un lenguaje de programacion 
+nos permite dar extructura a una pagina web es el esqueleto atravez de etiquetas
+<html>
+   <head>
+   informacion meta basica del sitio
+   como va funcionar el sitio
+   
+   </head>
+   <body>
+   cuerpo de la pagina lo que se vera en pantalla
+   </body>
+</html>
+
+ETIQUETAS DE TEXTO
+h1,h2,h3,h4,h5,h6
+mientras mas alto el numero menor es su importancia
+solo debes tener un h1 por pagina
+aunque el tamaño de los textos los podemos modificar con css depende la etique ta tiene una importancia semantica 
+que google lo tiene en cuenta en el momento de buscar tu pagina
+
+IMAGENES
+las imagenes son importantes para el diseño
+se pueden agregar por etiqueta html o desde css
+tiene unos atributos que permiten configurar ese elemento
+<img src="" alt="" width="" height=""/>
+En el proyecto es recomendable colocarlas en carpeta para ir teniendo un orden y estrucutura
+
+ENLACES
+los enlaces nos permiten navegar entre paginas o realizar algun llamado para traer informacion
+todo lo que este dentro de la etiqueta enlace puede ser clickeable
+<a href="">Enlace</a>
+
+PARRAFOS
+Nos permite organizar nuestros parrafos
+<p>lorem insu dolo amet is the titere tete fue</p>
+
+LISTADOS
+existes listados ordenados y desordenados podemos utilizar la etiqueta ul o ol anterior mente era muy
+utilizado para crear los 
+menus de navegacion
+<ul>
+<li></li>
+</ul>
+------------
+<ol>
+<li></li>
+</ol>
+
+VIDEO
+nos permite incrustar video en nuestra pagina o en una seccion de esta
+<video src="" controls muted autoplay loop></video>
+
+ESTRUCTURAR EL CONTENIDO
+html debe tener o seguir una recomendacion valida para que tenga un mejor orden esto me puede permitir
+identificar las diferentes partes de tu pagina  y tener mejor posisionamieto en 
+buscadores  
+ejemplo
+header---parte superior
+nav----navegacion
+main---contenido principal
+aside--- barra lateral acompaña al contenido principal
+section---puede ser una parte idependiente
+footer----es el pie de pagina de tu web
+div--- cualquier section de tupagina
+
+
+
+CSS
+hojas de estilo en cacada
+le da aparinci unica a tu pagina 
+fuetes
+tamaño
+animaciones
+colores
+
+codigo css
+
+ejemplo
+
+p{
+   color:green;
+   background:black;
+}
+
+p---atributo al que le estoy aplicando css
+
+{
+   color:green;
+   background:black;
+   width:200px;
+}propiedades que le estamos aplicando
+
+
+UNIDADES DE MEDIDA EN CSS
+HAY UNIDADES ABSOLUTAS Y RELATIVAS
+PX--pixeles esta basada en los pixeles de la pantalla
+EM
+REM
+CM
+
+selectores{
+   son los elemento a los que le aplicamos las propiedades css
+   estan los selectores de etiquetas los id y las clases
+   lo mas recomendable es trabajar con clases
+}
+colores{
+   los hay rgba(0,0,0,.5) hexadecimal(#000)
+   rgba nos permite transparencias
+
+}
+FUENTES{
+   font-size:10px,
+}
+MODEL BOX{
+   las medidas de la caja dependen de varias cosas
+   borde de la caja
+   margenes internas y esternas
+   margin:son las margenes externas del elemento
+   padding: son la margenes internas del elemento
+   contenido de la caja
+}
+animaciones
+TRANSISIONES{
+   nos permiten darle suavidad a nuestras animaciones
+   transition: all .2s
+   transition background .2s ease
+}
+TRANFORMACIONES{
+   nos permiten escalar o rotar nuestos elementos enlos diferentes ejes x y y
+   scale(1.5)
+   rotate(45deg)
+}
+
+!!important: estat etiqueta obliga a dar prioridad
+especificidad: es el orden de importancia que le da el css a los selectores para aplicar las propiedades
+orden del mas debil al mas fuerte
+
+FUENTES{
+   Nos permiten cambiar la fuente o tipo de letra a mostrar
+   una funete es google fonts 
+
+   @font-face{
+      font-family:nombre
+   }
+}
+etiqueta: nav
+clase: .navegacion{
+   permiten reutilizar
+}
+id: #navegacion{
+   no permite reutilizar ya que es unico
+}
+
+hay varios estilos para escribir codigo
+MODULOS{
+   creamos una clase y vamos celecionando cada elelmento por su etiqueta
+   son los elemnto sde tu html
+
+}
+BEM{
+BLOCK ELEMENT MODIFIER{
+   card:{}
+   car__titulo{}
+   card__imagen{}
+
+}
+}
+
+   UTILIDADES{
+      ejemplo taildwincss
+    text-center{}
+    color-red{}
+   }
+   SMACSS{
+      AGRUPAR ELEMENTOS QUE UTILIZAN EL MSIO CODIGO{
+
+         #header, #article{
+            font-weight:700;
+            color:red;
+         }
+      }
+   }
+
+   
+ 
+DISPLAY{
+   display:blok--un elelmento debajo del otro
+   display:inline un elemento al lado del otro no se le puede aplicar ni ancho ni altura 
+   para modificarlo se debe cambiar a block o inline-block depende de ut necesidad
+   display inline-block
+   display:flex cajas flexibles
+   display:grid crea columnas y filas
+}
+
+FLEXBOX
+nacio con la necesidad de crear cajas o elementos mas flexibles 
+antes se utilizaban tablas o floats
+a flexbox lo definen los ejes
+que dependen si estamos en fila (row ) o columna(column)
+flebos estan diseñados para alinear tus elementos
+se debe habilitar el el elemento padre con display:flex
+
+flex-direcction:row --por defecto{
+row-riverse
+
+}
+
+flex-direcction:column{
+column-riverse
+}
+
+alineacion en flexbox{
+   justify-content{
+   alinea orizontalmente si es row
+   justify-content{
+      center
+      space-between
+      space-around
+      space-evenly
+   }
+   }
+   align-iten{
+    alinea verticalmente
+    si es row
+    align-item{
+      center
+      start
+      end
+      streth
+    }
+   }
+}
+
+cuando utilizar flexbox{
+   cunado los elementos esten dentro de contenedores
+}
+
+grid{
+   cuando tu sitio contenga columnas dentro de contenedores
+}
+
+
+GRID permite definir el tamaño y ubicacion de los elementos  de tu sitio web
+
+se habilita con display:grid;
+
+
+CLAVE SSH GIT HUB
+id_ed255519
+
+palabra id
+
+

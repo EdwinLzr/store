@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="nombre-sitio">
+        <h1>Tienda <span>Muebles</span></h1>  
+    </header>
+  <div class="contenedor-navegacion">
+    <nav class="navegacion-principal contenedor">
+        <a class="enlace"  href="nosotros.html">Nosotros</a>
+        <a class="enlace"  href="tienda.html">Tienda</a>
+        <a class="enlace"  href="blog.html">Blog</a>
+        <a class="enlace"  href="galeria.html">Galeria</a> 
+        <a class="enlace"  href="contacto.html">Contacto</a>
+       </nav>
+  </div>
+  <div class="contacto contenedor">
+    <h2 class="text-center"> Contactanos</h2>
+    <form action="" class="formulario">
+        <fieldset>
+            <legend>Tus Datos</legend>
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" placeholder="Nombre">
+            </div>
+            <div class="campo">
+                <label for="asunto">Asunto:</label>
+                <input id="asunto" type="text" placeholder="Asunto">
+            </div>
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Email">
+            </div>
+            <div class="campo">
+                <label for="tel">Telefono:</label>
+                <input id="tel" type="tel" placeholder="Telefono">
+            </div>
+            <div class="campo">
+                <label for="fecha">Fecha:</label>
+                <input id="fecha" type="date" placeholder="Fecha">
+            </div>
+            <div class="campo">
+                <label for="password">Password:</label>
+                <input id="pasword" type="password" placeholder="password">
+            </div>
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje" ></textarea>
+             
+            </div>
+
+        
+
+        </fieldset>
+        
+       
+       
+        <fieldset>
+            
+        <legend>Pais</legend>
+         <label class="label-pais" for="pais">Pais</label>
+        <select name="pais" id="pais">
+            <option value="">-- Seleccione--</option>
+            <option value="MX">Colombia</option>
+            <option value="AR">Argentina</option>
+            <option value="PR">Peru</option>
+            <option value="CO">Colombia</option>
+        </select>
+        </fieldset>
+        <fieldset>
+        <legend>Informacion Extra</legend>
+        <div class="campo">
+            <label for="cliente">Cliente:</label>
+            <input type="radio" name="tipo" value="cliente">
+        </div>
+        <div class="campo">
+            <label for="Proveedor">Cliente:</label>
+            <input type="radio" name="tipo" value="proveedor">
+        </div>
+        <div class="campo">
+            <label for="categoria">Categoria de Interes</label>
+            <input list="categorias" name="categorias" >
+          <datalist id="categorias">
+            <option value="Cocina"/>
+            <option value="Exterior"/>
+            <option value="Garaje"/>
+            <option value="Sala"/>
+          </datalist>
+        </div>
+  
+
+        </fieldset>
+       <input class="btn" type="submit" value="Enviar">
+      
+    </form>
+  </div>
+    
+    <footer class="side-footer">
+     
+        <div class="contenedor grid-footer">
+         <div class="">
+             <h3>Categorias</h3>
+             <nav class="navegacion">
+                 <a href="">Cocina</a>
+                 <a href="">Oficina</a>
+                 <a href="">Jardin</a>
+                 <a href="">Dormitorio</a>
+                 <a href="">Cochera</a>
+             </nav>
+         </div>
+
+         <div class="">
+             <h3>Sobre Nosotros</h3>
+             <nav class="navegacion">
+                 <a href="">Historia</a>
+                 <a href="">Mision</a>
+                 <a href="">Carreras</a>
+                 <a href="">Privacidad</a>
+                 <a href="">Terminos</a>
+             </nav>
+ 
+         </div>
+         <div><h3>Soporte</h3>
+             <nav class="navegacion">
+                 <a href="">Preguntas</a>
+                 <a href="">Ayuda</a>
+                 <a href="">Confianza</a>
+                 
+             </nav>
+         </div>
+
+
+     </div>
+
+     <p class="derechos">Todos Los derechos Reservados  &copy; Edwin Loaiza</p>
+ </footer>
+</body>
+</html>
