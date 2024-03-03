@@ -437,21 +437,35 @@ display: grid;
   color: var(--colorSecundary);
 }
 
+ @media(min-width:768px){
+  .nosotros_grid{
+    margin-block: 10rem;
+    display: flex;
+  
+  }
+  .nosotros_grid div{
+   flex-basis: 50%;
+  
+  }
+ }
 
-.nosotros_grid{
-  margin-block: 10rem;
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-columns:repeat(auto-fit, minmax(25rem, 1fr)) ;
-}
 .texto-nosotros{
   font-size: 2rem;
 }
 .imagen{
-  border: 5px solid var(--colorYellow);
+  
   padding: .5rem;
   border-radius: 1rem;
 }
+ @media(min-width:768px){
+  .imagen{
+    border: 5px solid var(--colorYellow);
+    padding: .5rem;
+    border-radius: 1rem;
+
+  }
+ }
+
 .imagen img{
   transform: rotate(-5deg);
   border-radius: 1rem;
