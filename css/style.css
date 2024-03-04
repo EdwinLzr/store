@@ -521,16 +521,28 @@ display: grid;
   margin-bottom: 5rem;
 }
 
-.grid-galeria{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
+
+ @media(min-width:768px){
+  .grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .galeria img{
+  margin-bottom: 0;
+
+  }
+  
+
+ }
+
 
 .galeria img{
   height: 40rem;
-  width: 40rem;
   object-fit: cover;
+  margin-bottom: 1rem;
+
 }
 
 .contacto {
